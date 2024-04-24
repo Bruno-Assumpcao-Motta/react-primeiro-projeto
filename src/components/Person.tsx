@@ -1,11 +1,17 @@
 export const Person = () => {
     return (
         <>
-            <h1>Bruno Motta</h1>
+            <h1>Ayrton Senna</h1>
             <img 
-                src="" 
-                alt="Bruno Motta" 
+                src="https://www.tailorexec.com.br/wp-content/uploads/2024/03/horizon-chase-turbo-ayrton-senna-1024x576.jpg" 
+                alt="Ayrton Senna" 
+                className="w-52"
             />
+            <ul>
+                <li>Piloto de Formula 1</li>
+                <li>Empresário</li>
+                <li>Filantropo</li>
+            </ul>
 
 
         </> 
