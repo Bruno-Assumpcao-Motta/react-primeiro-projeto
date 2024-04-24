@@ -1,20 +1,27 @@
+const getWeekday = (today: Date) => {
+    return new Intl.DateTimeFormat('pt-BR', {weekday: 'long'}).format(today);
+}
 export const Person = () => {
+    const data = {
+        name: 'Ayrton Senna',
+        avatar: 'https://www.tailorexec.com.br/wp-content/uploads/2024/03/horizon-chase-turbo-ayrton-senna-1024x576.jpg',
+        roles: ['Piloto de Formula 1', 'Empresário', 'Filantropo']
+    }
 
-    const name: string = 'Ayrton Senna'
-    const avatar: string = 'https://www.tailorexec.com.br/wp-content/uploads/2024/03/horizon-chase-turbo-ayrton-senna-1024x576.jpg'
+    const today: Date = new Date();
 
     return (
         <>
-            <h1>{name}</h1>
+            <h1>{data.name} - {getWeekday(today)}</h1>
             <img 
-                src={avatar} 
-                alt={name} 
+                src={data.avatar} 
+                alt={data.name} 
                 className="w-52"
             />
             <ul>
-                <li>Piloto de Formula 1</li>
-                <li>Empresário</li>
-                <li>Filantropo</li>
+                <li>{data.roles[0]}</li>
+                <li>{data.roles[1]}</li>
+                <li>{data.roles[2]}</li>
             </ul>
 
 
