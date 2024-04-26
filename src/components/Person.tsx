@@ -7,19 +7,20 @@ type Props = {
     avatar: string;
     roles: string[];
 }
-export const Person = (props: Props) => {
+export const Person = ({ name, avatar, roles }: Props) => {
+
     return (
         <>
-            <h1>{props.name}</h1>
+            <h1>{name}</h1>
             <img 
-                src={props.avatar} 
-                alt={props.name} 
+                src={avatar} 
+                alt={name} 
                 className="w-52"
             />
             <ul>
-                <li>{props.roles[0]}</li>
-                <li>{props.roles[1]}</li>
-                <li>{props.roles[2]}</li>
+                <li>{roles[0]}</li>
+                <li>{roles[1]}</li>
+                <li>{roles[2]}</li>
             </ul>
 
 
