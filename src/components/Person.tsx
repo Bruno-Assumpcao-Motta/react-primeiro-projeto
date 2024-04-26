@@ -1,7 +1,3 @@
-const getWeekday = (today: Date) => {
-    return new Intl.DateTimeFormat('pt-BR', {weekday: 'long'}).format(today);
-}
-
 type Props = {
     name: string;
     avatar: string;
