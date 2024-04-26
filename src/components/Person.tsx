@@ -1,7 +1,13 @@
 const getWeekday = (today: Date) => {
     return new Intl.DateTimeFormat('pt-BR', {weekday: 'long'}).format(today);
 }
-export const Person = () => {
+
+type Props = {
+    name: string;
+    avatar: string;
+    roles: string[];
+}
+export const Person = (props: Props) => {
     const data = {
         name: 'Ayrton Senna',
         avatar: 'https://www.tailorexec.com.br/wp-content/uploads/2024/03/horizon-chase-turbo-ayrton-senna-1024x576.jpg',
