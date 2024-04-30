@@ -1,6 +1,6 @@
 type Props = {
     name: string;
-    avatar: string;
+    avatar?: string;
     roles: string[];
 }
 export const Person = ({ 
